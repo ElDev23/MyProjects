@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --black:black;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #9E9E9E;
+}
+/*header a*/
+header a{
+    text-align: center;
+    text-decoration: none;
+    padding: 50px;
+}
+/*header logo*/
+#logo{
+    border-radius: 5px;
+    padding-left: 0px;
+    height: auto;
+}
+/*main*/
+#main{
+    padding: 25px 10px;
+    background-image: url(img/tecnologyes.jpg);
+    background-size: cover;
+    height: 600px;
+}
+/*main h1*/
+#About span{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+
+}
+#About{
+    color: cadetblue;
+    padding: 70px 40px;
+
+}
+/*main p*/
+#More-info{
+    text-align: left;
+    margin-top: -50px;
+    padding-left: 40px;
+    padding-bottom:120px;
+}
+/*article */
+.Services{
+    color: #9E9E9E;
+    padding: 20px;
+}
+/*article h1*/
+.Services h1{
+    color: #065d87;
+    text-align: center;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    
+}
+/*article box*/
+.Box{
+    display:flex;
+    justify-content: space-between;
+    color: var(--black);
+    font-size:18px;
+}
+
+/*article/Box-face*/
+.Box-face{
+    background-image: url(img/face.jpg); 
+    justify-content: space-between;
+    background-size: cover;
+    opacity: 0.6;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid #9E9E9E;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    
+}
+/*article/box(h1)*/
+.Box h1{
+    color: #27042d;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+/*article/box-body*/
+.box-body{
+    background: url(img/body.jpg);
+    justify-content: space-between;
+    color: var(--black);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid #9E9E9E;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.6;
+}
+/*article/box-E*/
+.box-E{
+    background-image: url(img/other.jpg);
+    justify-content: space-between;
+    color: var(--black);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid #9E9E9E;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.6;
+}
+/*article/input"book"*/
+#Book{
+    text-align: center;
+    padding-top: 30px;
+}
+#text{
+    text-align:center;
+    border-radius: 1px solid var(--black);
+    background-color: var(--black);
+    color: white;
+    width: 15%;
+    height: 30px;
+}
+/*section/h1*/
+#Card h1{
+    color: #380332;
+    text-align: left;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+/*section/Subscribe(h1)*/
+#Subscribe h2{
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+/*section/subscribe*/
+.Subscribe{
+    display: block;
+}
+/*section/Card-1&Card-2*/
+#Card-1, #Card-2{
+    background-color: #e4dada;
+    color: var(--black);
+    width: 600px;
+    height: 200px;
+    border-radius: 30px;
+}
+/*section/Card*/
+.Card{
+    display: flex;
+    padding-bottom:0px;
+}
+/*section/card(p)*/
+.Card p{
+    text-align: center;
+}
+/*section/form*/
+form{  
+    text-align: center;
+    padding: 140px;
+}
+/*section/form"whatsapp"*/
+#Whatsapp{
+    text-align: center;
+    color:#fff;
+    border: 1px solid var(--black);
+    background-color:var(--black) ;
+    width: 200px;
+    height: 30px;
+    
+}
+/*section/we*/
+form{
+    padding-top: 20px;
+}
+#Sconto{
+    color: brown;
+    font-size: 48px;
+    padding-top:0px;
+}
+.We{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+/*section/footer*/
+.footer{
+    background-color: #9E9E9E;
+    height: 200px;
+    padding:50px 30px;
+
+/*section/footer/span*/
+}
+#About{
+    padding-top: 20px;
+}
+#About p{
+    color:black;
+    
+    
+}
+.We span{
+    color:#a70e0e;
+    font-size:18px;
+
+}
+/*section/copyright*/
+#copyright{
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+
+/**/
+@media only screen and (max-width: 600px) {
+    #web{
+        width:600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "article"
+        "section"
+        "footer";
+       
+    }
+    header{
+        grid-area: header;
+        background-color: #9E9E9E;
+    }
+    main{
+        grid-area: main;
+        background-image: url(img/tecnologyes.jpg);
+    }
+    article{
+        grid-area: article;
+        background-color: #c3a9a9;
+    }
+    section{
+        grid-area: section;
+        background-color: #c3a9a9;
+    }
+    footer{
+        grid-area: footer;
+        background-color: #9E9E9E;
+    }
+}
+
